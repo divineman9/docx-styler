@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Annamaya · Vedic Lifestyle Diet</title>
+<meta name="description" content="Annamaya — we become what we eat. Ayurvedic diet by your dosha: find your constitution, daily meals, a food library and foods that don't go together. Free and private.">
+<meta name="theme-color" content="#234B3B">
+<meta name="theme-color" content="#1B1F2A" media="(prefers-color-scheme: dark)">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Annamaya">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="apple-touch-icon" href="icon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Yatra+One&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700;6..12,800&family=Tiro+Devanagari+Sanskrit:ital@0;1&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#view">Skip to content</a>
+<header class="top">
+  <div class="brand">
+    <span class="brand-mark"></span>
+    <div class="brand-text">
+      <div class="brand-line">
+        <h1>Annamaya</h1>
+        <span class="brand-meaning">(the sheath made of food)</span>
+      </div>
+      <span class="brand-sub">Vedic Lifestyle Diet</span>
+    </div>
+  </div>
+  <label class="type-pick"><span class="visually-hidden">Your dosha</span><select id="typeSelect" aria-label="Your dosha"></select></label>
+</header>
+
+<main id="view" tabindex="-1">
+  <noscript>
+    <div class="card">
+      <h2 class="card-title">JavaScript is needed</h2>
+      <p>This app runs entirely in your browser and needs JavaScript to show your meals, quiz and food library. Please enable JavaScript and reload the page.</p>
+    </div>
+  </noscript>
+</main>
+
+<nav class="tabs" aria-label="Main">
+  <button data-tab="today" aria-current="page"><span class="ico"></span><span class="lbl">Today</span></button>
+  <button data-tab="foods"><span class="ico"></span><span class="lbl">Foods</span></button>
+  <button data-tab="learn"><span class="ico"></span><span class="lbl">Learn</span></button>
+  <button data-tab="progress"><span class="ico"></span><span class="lbl">Progress</span></button>
+  <button data-tab="me"><span class="ico"></span><span class="lbl">Me</span></button>
+</nav>
+
+<div id="overlay" class="overlay" hidden>
+  <div class="overlay-panel" role="dialog" aria-modal="true"></div>
+</div>
+
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+<script src="data.js" defer></script>
+<script src="data-foods.js" defer></script>
+<script src="data-learn.js" defer></script>
+<script src="data-quiz.js" defer></script>
+<script defer src="data-wisdom.js"></script>
+<script src="data-recipes.js" defer></script>
+<script src="art.js" defer></script>
+<script src="views.js" defer></script>
+<script src="recipes.js" defer></script>
+<script src="app.js" defer></script>
+</body>
+</html>
+

@@ -1,0 +1,14 @@
+{
+  "name": "Annamaya · Vedic Lifestyle Diet",
+  "short_name": "Annamaya",
+  "description": "We become what we eat — Ayurvedic diet by your dosha: daily meals, food library and food wisdom.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "theme_color": "#234B3B",
+  "background_color": "#F6F0E4",
+  "icons": [
+    { "src": "icon-180.png", "sizes": "180x180", "type": "image/png" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
